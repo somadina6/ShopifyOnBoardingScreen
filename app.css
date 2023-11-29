@@ -53,21 +53,25 @@ html * {
   background: var(--grey2);
 }
 
-#searchbox {
+.search-bar:active {
+  border-radius: 8px;
+  border: 2px solid var(--White, #fff);
+  background: var(--grey-g-200, #303030);
+}
+
+.searchbox {
   /* Input */
   width: calc(100% - 32px);
   background: transparent;
   border: none;
   margin-left: 6px;
   color: var(--grey1);
+  outline: none;
 }
 
-/* #searchbox: {
-    border: 1px solid red;
-  } */
-
-#searchbox::placeholder {
+.searchbox::placeholder {
   color: var(--grey1);
+  border: none;
 }
 
 .profile {
